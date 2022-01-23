@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ChatrListButton: View {
+public struct ChatrListButtonStandard: View {
 
     private let title: String
     private var systemImage: String = ""

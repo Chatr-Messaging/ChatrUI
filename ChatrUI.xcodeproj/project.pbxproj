@@ -11,7 +11,7 @@
 		05D1FF44279CF56B008A038C /* ChatrUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D1FF41279CF56B008A038C /* ChatrUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FF4D279CF895008A038C /* ChatrListSection.swift */; };
 		05DCB34B279D005A0078EE3B /* ChatrColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05DCB34A279D005A0078EE3B /* ChatrColors.xcassets */; };
-		05DCB34D279D026E0078EE3B /* ChatrListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB34C279D026E0078EE3B /* ChatrListButton.swift */; };
+		05DCB34D279D026E0078EE3B /* ChatrListButtonStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB34C279D026E0078EE3B /* ChatrListButtonStandard.swift */; };
 		05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB34F279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift */; };
 		05DCB353279D073A0078EE3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB352279D073A0078EE3B /* Constants.swift */; };
 		05DCB355279D1D940078EE3B /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB354279D1D940078EE3B /* HapticFeedback.swift */; };
@@ -23,7 +23,7 @@
 		05D1FF42279CF56B008A038C /* ChatrUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ChatrUI.docc; sourceTree = "<group>"; };
 		05D1FF4D279CF895008A038C /* ChatrListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrListSection.swift; sourceTree = "<group>"; };
 		05DCB34A279D005A0078EE3B /* ChatrColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ChatrColors.xcassets; path = ChatrUI/Colors/ChatrColors.xcassets; sourceTree = SOURCE_ROOT; };
-		05DCB34C279D026E0078EE3B /* ChatrListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrListButton.swift; sourceTree = "<group>"; };
+		05DCB34C279D026E0078EE3B /* ChatrListButtonStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrListButtonStandard.swift; sourceTree = "<group>"; };
 		05DCB34F279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrDefaultInteractiveStyle.swift; sourceTree = "<group>"; };
 		05DCB352279D073A0078EE3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05DCB354279D1D940078EE3B /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				05DCB34E279D04FA0078EE3B /* ButtonStyles */,
-				05DCB34C279D026E0078EE3B /* ChatrListButton.swift */,
+				05DCB34C279D026E0078EE3B /* ChatrListButtonStandard.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DCB34D279D026E0078EE3B /* ChatrListButton.swift in Sources */,
+				05DCB34D279D026E0078EE3B /* ChatrListButtonStandard.swift in Sources */,
 				05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */,
 				05D1FF43279CF56B008A038C /* ChatrUI.docc in Sources */,
 				05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */,
