@@ -10,7 +10,7 @@
 		05D1FF43279CF56B008A038C /* ChatrUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FF42279CF56B008A038C /* ChatrUI.docc */; };
 		05D1FF44279CF56B008A038C /* ChatrUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D1FF41279CF56B008A038C /* ChatrUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FF4D279CF895008A038C /* ChatrListSection.swift */; };
-		05DCB34B279D005A0078EE3B /* ChatrColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05DCB34A279D005A0078EE3B /* ChatrColors.xcassets */; };
+		05DCB34B279D005A0078EE3B /* BaseColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05DCB34A279D005A0078EE3B /* BaseColors.xcassets */; };
 		05DCB34D279D026E0078EE3B /* ChatrListButtonStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB34C279D026E0078EE3B /* ChatrListButtonStandard.swift */; };
 		05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB34F279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift */; };
 		05DCB353279D073A0078EE3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB352279D073A0078EE3B /* Constants.swift */; };
@@ -22,7 +22,7 @@
 		05D1FF41279CF56B008A038C /* ChatrUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatrUI.h; sourceTree = "<group>"; };
 		05D1FF42279CF56B008A038C /* ChatrUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ChatrUI.docc; sourceTree = "<group>"; };
 		05D1FF4D279CF895008A038C /* ChatrListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrListSection.swift; sourceTree = "<group>"; };
-		05DCB34A279D005A0078EE3B /* ChatrColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ChatrColors.xcassets; path = ChatrUI/Colors/ChatrColors.xcassets; sourceTree = SOURCE_ROOT; };
+		05DCB34A279D005A0078EE3B /* BaseColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = BaseColors.xcassets; path = ChatrUI/Colors/BaseColors.xcassets; sourceTree = SOURCE_ROOT; };
 		05DCB34C279D026E0078EE3B /* ChatrListButtonStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrListButtonStandard.swift; sourceTree = "<group>"; };
 		05DCB34F279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrDefaultInteractiveStyle.swift; sourceTree = "<group>"; };
 		05DCB352279D073A0078EE3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 				05D1FF4A279CF755008A038C /* Buttons */,
 				05D1FF4B279CF844008A038C /* Text Fields */,
 				05D1FF4C279CF86E008A038C /* Lists */,
-				05DCB349279CFFFE0078EE3B /* Colors */,
 				05DCB351279D068D0078EE3B /* Helpers */,
+				05DCB349279CFFFE0078EE3B /* Colors */,
 				05D1FF42279CF56B008A038C /* ChatrUI.docc */,
 			);
 			path = ChatrUI;
@@ -97,7 +97,7 @@
 		05DCB349279CFFFE0078EE3B /* Colors */ = {
 			isa = PBXGroup;
 			children = (
-				05DCB34A279D005A0078EE3B /* ChatrColors.xcassets */,
+				05DCB34A279D005A0078EE3B /* BaseColors.xcassets */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DCB34B279D005A0078EE3B /* ChatrColors.xcassets in Resources */,
+				05DCB34B279D005A0078EE3B /* BaseColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
