@@ -16,6 +16,7 @@ public struct ChatrListButtonStandard: View {
     private let action: () -> Void
 
     // System Image
+
     public init(title: String, systemImage: String, isLast: Bool, action: @escaping () -> Void) {
         self.title = title
         self.systemImage = systemImage
@@ -24,6 +25,7 @@ public struct ChatrListButtonStandard: View {
     }
 
     // Local Image
+
     public init(title: String, localImage: String, isLast: Bool, action: @escaping () -> Void) {
         self.title = title
         self.localImage = localImage
@@ -32,6 +34,7 @@ public struct ChatrListButtonStandard: View {
     }
 
     // Text Only
+
     public init(title: String, isLast: Bool, action: @escaping () -> Void) {
         self.title = title
         self.isLast = isLast
@@ -81,7 +84,7 @@ public struct ChatrListButtonStandard: View {
                     .padding(.vertical, localImage.isEmpty ? 15 : 10)
 
                     Divider()
-                        .frame(width: Constants.screenWidth - (localImage.isEmpty ? 80 : 95))
+                        .frame(width: Constants.screenWidth - (localImage.isEmpty && systemImage.isEmpty ? 50 : (localImage.isEmpty ? 80 : 95)))
                         .opacity(!isLast ? 1 : 0)
                 }
                 .contentShape(Rectangle())
