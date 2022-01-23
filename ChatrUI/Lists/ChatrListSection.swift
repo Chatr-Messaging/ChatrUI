@@ -12,8 +12,13 @@ public struct ChatrListSection<Content: View>: View {
     private let content: Content
     private let title: String
 
-    public init(title: String?, @ViewBuilder _ content: () -> Content) {
-        self.title = title ?? ""
+    public init(title: String, @ViewBuilder _ content: () -> Content) {
+        self.title = title
+        self.content = content()
+    }
+
+    public init(@ViewBuilder _ content: () -> Content) {
+        self.title = ""
         self.content = content()
     }
 
