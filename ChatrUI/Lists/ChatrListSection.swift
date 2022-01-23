@@ -12,14 +12,14 @@ public struct ChatrListSection<Content: View>: View {
     private let content: Content
     private let title: String
 
-    public init(title: String, @ViewBuilder _ content: () -> Content) {
-        self.title = title
+    public init(title: String?, @ViewBuilder _ content: () -> Content) {
+        self.title = title ?? ""
         self.content = content()
     }
 
     public var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text(title + ":")
+            Text(title.isEmpty ? "" : title + ":")
                 .font(.caption)
                 .fontWeight(.regular)
                 .textCase(.uppercase)
