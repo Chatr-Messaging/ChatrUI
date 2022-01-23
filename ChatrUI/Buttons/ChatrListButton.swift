@@ -9,17 +9,16 @@ import SwiftUI
 
 public struct ChatrListButton: View {
 
-    let title: String
-    let systemImage: String
-    let localImage: String
-    let isLast: Bool
-    let action: () -> Void
+    private let title: String
+    private var systemImage: String = ""
+    private var localImage: String = ""
+    private let isLast: Bool
+    private let action: () -> Void
 
     // System Image
     public init(title: String, systemImage: String, isLast: Bool, action: @escaping () -> Void) {
         self.title = title
         self.systemImage = systemImage
-        self.localImage = ""
         self.isLast = isLast
         self.action = action
     }
@@ -27,7 +26,6 @@ public struct ChatrListButton: View {
     // Local Image
     public init(title: String, localImage: String, isLast: Bool, action: @escaping () -> Void) {
         self.title = title
-        self.systemImage = ""
         self.localImage = localImage
         self.isLast = isLast
         self.action = action
@@ -36,8 +34,6 @@ public struct ChatrListButton: View {
     // Text Only
     public init(title: String, isLast: Bool, action: @escaping () -> Void) {
         self.title = title
-        self.systemImage = ""
-        self.localImage = ""
         self.isLast = isLast
         self.action = action
     }
@@ -64,7 +60,7 @@ public struct ChatrListButton: View {
                                 .frame(width: 32, height: 32, alignment: .center)
                                 .padding(.trailing, 5)
                         } else {
-                            Rectangle().frame(width: 1, height: 20)
+                            EmptyView().frame(height: 20)
                         }
 
                         Text(title)
