@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChatrTextFieldList: View {
+public struct ChatrTextFieldList: View {
     
     @State var text: String = ""
 
