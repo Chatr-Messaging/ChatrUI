@@ -43,6 +43,7 @@ struct Blob: View {
             .fill(color)
             .position(transformedPosition)
             .scaleEffect(scale)
+            .animation(animation)
             .onAppear(perform: update)
             .onReceive(timer) { _ in
                 update()
@@ -51,10 +52,7 @@ struct Blob: View {
 
     private func update() {
         guard shouldAnimate else { return }
-
-        withAnimation(animation) {
-            position = CGPoint(x: CGFloat.random(in: 0...1), y: CGFloat.random(in: 0...1))
-            scale = CGSize(width: CGFloat.random(in: 0...2), height: CGFloat.random(in: 0...2))
-        }
+        position = CGPoint(x: CGFloat.random(in: 0...1), y: CGFloat.random(in: 0...1))
+        scale = CGSize(width: CGFloat.random(in: 0...2), height: CGFloat.random(in: 0...2))
     }
 }
