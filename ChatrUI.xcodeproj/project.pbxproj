@@ -15,6 +15,9 @@
 		05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB34F279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift */; };
 		05DCB353279D073A0078EE3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB352279D073A0078EE3B /* Constants.swift */; };
 		05DCB355279D1D940078EE3B /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB354279D1D940078EE3B /* HapticFeedback.swift */; };
+		05FB96E7279F79D2005377AF /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96E6279F79D2005377AF /* Blob.swift */; };
+		05FB96E9279F79F3005377AF /* IrregularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96E8279F79F3005377AF /* IrregularGradient.swift */; };
+		05FB96EB279F7A4D005377AF /* IrregularGradientModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96EA279F7A4D005377AF /* IrregularGradientModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		05DCB34F279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrDefaultInteractiveStyle.swift; sourceTree = "<group>"; };
 		05DCB352279D073A0078EE3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05DCB354279D1D940078EE3B /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		05FB96E6279F79D2005377AF /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		05FB96E8279F79F3005377AF /* IrregularGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradient.swift; sourceTree = "<group>"; };
+		05FB96EA279F7A4D005377AF /* IrregularGradientModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradientModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				05D1FF41279CF56B008A038C /* ChatrUI.h */,
-				05D1FF4A279CF755008A038C /* Buttons */,
-				05D1FF4B279CF844008A038C /* Text Fields */,
-				05D1FF4C279CF86E008A038C /* Lists */,
+				05FB96E4279F796F005377AF /* Elements */,
 				05DCB351279D068D0078EE3B /* Helpers */,
 				05DCB349279CFFFE0078EE3B /* Colors */,
 				05D1FF42279CF56B008A038C /* ChatrUI.docc */,
@@ -117,6 +121,27 @@
 				05DCB354279D1D940078EE3B /* HapticFeedback.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		05FB96E4279F796F005377AF /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				05D1FF4A279CF755008A038C /* Buttons */,
+				05D1FF4C279CF86E008A038C /* Lists */,
+				05D1FF4B279CF844008A038C /* Text Fields */,
+				05FB96E5279F7997005377AF /* Irregular Gradients */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		05FB96E5279F7997005377AF /* Irregular Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				05FB96E6279F79D2005377AF /* Blob.swift */,
+				05FB96E8279F79F3005377AF /* IrregularGradient.swift */,
+				05FB96EA279F7A4D005377AF /* IrregularGradientModifiers.swift */,
+			);
+			path = "Irregular Gradients";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +225,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DCB34D279D026E0078EE3B /* ChatrListButtonStandard.swift in Sources */,
+				05FB96EB279F7A4D005377AF /* IrregularGradientModifiers.swift in Sources */,
 				05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */,
+				05FB96E7279F79D2005377AF /* Blob.swift in Sources */,
 				05D1FF43279CF56B008A038C /* ChatrUI.docc in Sources */,
 				05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */,
+				05FB96E9279F79F3005377AF /* IrregularGradient.swift in Sources */,
 				05DCB353279D073A0078EE3B /* Constants.swift in Sources */,
 				05DCB355279D1D940078EE3B /* HapticFeedback.swift in Sources */,
 			);
