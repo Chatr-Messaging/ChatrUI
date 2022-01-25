@@ -19,43 +19,48 @@ struct ChatrTextFieldList: View {
     private var textLimit: Int = 0
     private var systemImage: String = ""
     private var localImage: String = ""
+    private let isLast: Bool
     private let onEditingChanged: (String) -> Void
     private let onCommit: () -> Void
 
-    public init(text: String, placeholder: String, textLimit: Int?, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
+    public init(text: String, placeholder: String, textLimit: Int?, isLast: Bool, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
         self.text = text
         self.placeholder = placeholder
         self.textLimit = textLimit ?? 0
+        self.isLast = isLast
         self.onCommit = onCommit
         self.onEditingChanged = onEditingChanged
     }
 
-    public init(text: String, placeholder: String, systemImage: String, textLimit: Int?, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
+    public init(text: String, placeholder: String, systemImage: String, textLimit: Int?, isLast: Bool, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
         self.text = text
         self.placeholder = placeholder
         self.systemImage = systemImage
         self.textLimit = textLimit ?? 0
+        self.isLast = isLast
         self.onCommit = onCommit
         self.onEditingChanged = onEditingChanged
     }
 
-    public init(text: String, placeholder: String, localImage: String, textLimit: Int?, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
+    public init(text: String, placeholder: String, localImage: String, textLimit: Int?, isLast: Bool, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
         self.text = text
         self.placeholder = placeholder
         self.localImage = localImage
         self.textLimit = textLimit ?? 0
+        self.isLast = isLast
         self.onCommit = onCommit
         self.onEditingChanged = onEditingChanged
     }
 
-    public init(placeholder: String, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
+    public init(placeholder: String, isLast: Bool, onEditingChanged: @escaping (String) -> Void = { _ in }, onCommit: @escaping () -> Void) {
         self.placeholder = placeholder
+        self.isLast = isLast
         self.onCommit = onCommit
         self.onEditingChanged = onEditingChanged
     }
 
     public var body: some View{
-        VStack(alignment: .leading, spacing: 0) {
+        VStack(alignment: .leading, spacing: 5) {
             HStack(alignment: .center, spacing: 2.5) {
                 if !systemImage.isEmpty {
                     Image(systemName: systemImage)
@@ -115,15 +120,18 @@ struct ChatrTextFieldList: View {
                         .offset(x: -5)
                         .opacity(hasText && textLimit != 0 ? 1 : 0)
                     Spacer()
-                }.offset(x: (hasText ? -15 : !systemImage.isEmpty ? 30 : !localImage.isEmpty ? 35 : 0), y: hasText ? -15 : 0)
+                }.offset(x: hasText ? (!systemImage.isEmpty ? -15 : !localImage.isEmpty ? -8 : -10) : (!systemImage.isEmpty ? 30 : !localImage.isEmpty ? 35 : 0), y: hasText ? -15 : 0)
             , alignment: .leading)
             .padding(.horizontal)
 
             Rectangle()
-                .fill(exceededLimit ? .red.opacity(0.6) : (focusedField ? .blue.opacity(0.6) : .primary.opacity(0.2)))
-                .frame(height: 1)
+                .fill(exceededLimit ? .red.opacity(0.6) : (focusedField ? .blue.opacity(0.6) : .secondary.opacity(0.5)))
+                .opacity(isLast ? 0 : 1)
+                .frame(height: 1.25)
+                .padding(.top, 12)
+                .padding(.leading, 20)
         }
-        .padding(.vertical, 15)
+        .padding(.top, 12)
         .background(Color("baseButton"))
         .cornerRadius(10)
         .onAppear() {
