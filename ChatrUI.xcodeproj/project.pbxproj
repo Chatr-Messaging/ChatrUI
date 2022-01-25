@@ -18,8 +18,9 @@
 		05FB96E7279F79D2005377AF /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96E6279F79D2005377AF /* Blob.swift */; };
 		05FB96E9279F79F3005377AF /* IrregularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96E8279F79F3005377AF /* IrregularGradient.swift */; };
 		05FB96EB279F7A4D005377AF /* IrregularGradientModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96EA279F7A4D005377AF /* IrregularGradientModifiers.swift */; };
-		05FB96ED279F7B09005377AF /* ChatrTextFieldStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96EC279F7B09005377AF /* ChatrTextFieldStandard.swift */; };
+		05FB96ED279F7B09005377AF /* ChatrTextFieldSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96EC279F7B09005377AF /* ChatrTextFieldSingle.swift */; };
 		05FB96F2279FAB7B005377AF /* ChatrFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96F1279FAB7B005377AF /* ChatrFonts.swift */; };
+		05FB96F5279FB185005377AF /* ChatrTextFieldList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96F4279FB185005377AF /* ChatrTextFieldList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,9 @@
 		05FB96E6279F79D2005377AF /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
 		05FB96E8279F79F3005377AF /* IrregularGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradient.swift; sourceTree = "<group>"; };
 		05FB96EA279F7A4D005377AF /* IrregularGradientModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularGradientModifiers.swift; sourceTree = "<group>"; };
-		05FB96EC279F7B09005377AF /* ChatrTextFieldStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrTextFieldStandard.swift; sourceTree = "<group>"; };
+		05FB96EC279F7B09005377AF /* ChatrTextFieldSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrTextFieldSingle.swift; sourceTree = "<group>"; };
 		05FB96F1279FAB7B005377AF /* ChatrFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrFonts.swift; sourceTree = "<group>"; };
+		05FB96F4279FB185005377AF /* ChatrTextFieldList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatrTextFieldList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,8 @@
 		05D1FF4B279CF844008A038C /* Text Fields */ = {
 			isa = PBXGroup;
 			children = (
-				05FB96EC279F7B09005377AF /* ChatrTextFieldStandard.swift */,
+				05FB96EC279F7B09005377AF /* ChatrTextFieldSingle.swift */,
+				05FB96F4279FB185005377AF /* ChatrTextFieldList.swift */,
 			);
 			path = "Text Fields";
 			sourceTree = "<group>";
@@ -242,8 +245,9 @@
 				05FB96EB279F7A4D005377AF /* IrregularGradientModifiers.swift in Sources */,
 				05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */,
 				05FB96E7279F79D2005377AF /* Blob.swift in Sources */,
-				05FB96ED279F7B09005377AF /* ChatrTextFieldStandard.swift in Sources */,
+				05FB96ED279F7B09005377AF /* ChatrTextFieldSingle.swift in Sources */,
 				05D1FF43279CF56B008A038C /* ChatrUI.docc in Sources */,
+				05FB96F5279FB185005377AF /* ChatrTextFieldList.swift in Sources */,
 				05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */,
 				05FB96F2279FAB7B005377AF /* ChatrFonts.swift in Sources */,
 				05FB96E9279F79F3005377AF /* IrregularGradient.swift in Sources */,

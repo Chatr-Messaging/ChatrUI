@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChatrTextFieldStandard: View {
+struct ChatrTextFieldList: View {
     
     @State var text: String = ""
 
@@ -118,14 +118,14 @@ struct ChatrTextFieldStandard: View {
                 }.offset(x: (hasText ? -15 : !systemImage.isEmpty ? 30 : !localImage.isEmpty ? 35 : 0), y: hasText ? -15 : 0)
             , alignment: .leading)
             .padding(.horizontal)
+
+            Rectangle()
+                .fill(exceededLimit ? .red.opacity(0.6) : (focusedField ? .blue.opacity(0.6) : .primary.opacity(0.2)))
+                .frame(height: 1)
         }
         .padding(.vertical, 15)
         .background(Color("baseButton"))
         .cornerRadius(10)
-        .overlay(RoundedRectangle(cornerRadius: 10, style: .circular)
-                    .stroke(exceededLimit ? .red.opacity(0.6) : (focusedField ? .blue.opacity(0.6) : .primary.opacity(0.2)), lineWidth: 2)
-                    .shadow(color: focusedField ? .blue.opacity(0.2) : .clear, radius: 6, x: 0, y: 2))
-        .padding(.horizontal)
         .onAppear() {
             if !text.isEmpty {
                 hasText = true
