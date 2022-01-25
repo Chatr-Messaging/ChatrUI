@@ -125,11 +125,11 @@ struct ChatrTextFieldList: View {
             .padding(.horizontal)
 
             Rectangle()
-                .fill(exceededLimit ? .red.opacity(0.6) : (focusedField ? .blue.opacity(0.6) : .secondary.opacity(0.5)))
+                .fill(exceededLimit ? .red.opacity(0.6) : (focusedField ? .blue.opacity(0.6) : .secondary.opacity(0.4)))
                 .opacity(isLast ? 0 : 1)
                 .frame(height: 1.25)
                 .padding(.top, 12)
-                .padding(.leading, 20)
+                .padding(.leading, 18)
         }
         .padding(.top, 12)
         .background(Color("baseButton"))
