@@ -155,7 +155,7 @@ struct PinchToZoom: ViewModifier {
 }
 
 extension View {
-    func pinchToZoom() -> some View {
+    public func pinchToZoom() -> some View {
         self.modifier(PinchToZoom())
     }
 }
