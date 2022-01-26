@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum AppColor: String, Hashable, CaseIterable {
+enum AppColor: Hashable, CaseIterable {
     case primary
     case secondary
     case red

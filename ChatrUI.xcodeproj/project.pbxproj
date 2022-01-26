@@ -24,7 +24,6 @@
 		05FB97AF27A0C418005377AF /* PinchToZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB97AE27A0C418005377AF /* PinchToZoom.swift */; };
 		05FB97B227A0C512005377AF /* AlertBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB97B127A0C512005377AF /* AlertBadge.swift */; };
 		05FB97B427A0C64C005377AF /* ChatrColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB97B327A0C64C005377AF /* ChatrColors.swift */; };
-		05FB97B627A0C77D005377AF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FB97B527A0C77D005377AF /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +45,6 @@
 		05FB97AE27A0C418005377AF /* PinchToZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchToZoom.swift; sourceTree = "<group>"; };
 		05FB97B127A0C512005377AF /* AlertBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBadge.swift; sourceTree = "<group>"; };
 		05FB97B327A0C64C005377AF /* ChatrColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrColors.swift; sourceTree = "<group>"; };
-		05FB97B527A0C77D005377AF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +166,6 @@
 			children = (
 				05FB96F1279FAB7B005377AF /* ChatrFonts.swift */,
 				05FB97B327A0C64C005377AF /* ChatrColors.swift */,
-				05FB97B527A0C77D005377AF /* Media.xcassets */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -250,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05FB97B627A0C77D005377AF /* Media.xcassets in Resources */,
 				05DCB34B279D005A0078EE3B /* BaseColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
