@@ -21,6 +21,10 @@
 		05FB96ED279F7B09005377AF /* ChatrTextFieldSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96EC279F7B09005377AF /* ChatrTextFieldSingle.swift */; };
 		05FB96F2279FAB7B005377AF /* ChatrFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96F1279FAB7B005377AF /* ChatrFonts.swift */; };
 		05FB96F5279FB185005377AF /* ChatrTextFieldList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB96F4279FB185005377AF /* ChatrTextFieldList.swift */; };
+		05FB97AF27A0C418005377AF /* PinchToZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB97AE27A0C418005377AF /* PinchToZoom.swift */; };
+		05FB97B227A0C512005377AF /* AlertBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB97B127A0C512005377AF /* AlertBadge.swift */; };
+		05FB97B427A0C64C005377AF /* ChatrColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FB97B327A0C64C005377AF /* ChatrColors.swift */; };
+		05FB97B627A0C77D005377AF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FB97B527A0C77D005377AF /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		05FB96EC279F7B09005377AF /* ChatrTextFieldSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrTextFieldSingle.swift; sourceTree = "<group>"; };
 		05FB96F1279FAB7B005377AF /* ChatrFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrFonts.swift; sourceTree = "<group>"; };
 		05FB96F4279FB185005377AF /* ChatrTextFieldList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatrTextFieldList.swift; sourceTree = "<group>"; };
+		05FB97AE27A0C418005377AF /* PinchToZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchToZoom.swift; sourceTree = "<group>"; };
+		05FB97B127A0C512005377AF /* AlertBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBadge.swift; sourceTree = "<group>"; };
+		05FB97B327A0C64C005377AF /* ChatrColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatrColors.swift; sourceTree = "<group>"; };
+		05FB97B527A0C77D005377AF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			children = (
 				05DCB352279D073A0078EE3B /* Constants.swift */,
 				05DCB354279D1D940078EE3B /* HapticFeedback.swift */,
+				05FB97AE27A0C418005377AF /* PinchToZoom.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -138,6 +147,7 @@
 				05D1FF4A279CF755008A038C /* Buttons */,
 				05D1FF4C279CF86E008A038C /* Lists */,
 				05D1FF4B279CF844008A038C /* Text Fields */,
+				05FB97B027A0C4B4005377AF /* Notifications */,
 				05FB96E5279F7997005377AF /* Irregular Gradients */,
 			);
 			path = Elements;
@@ -157,8 +167,18 @@
 			isa = PBXGroup;
 			children = (
 				05FB96F1279FAB7B005377AF /* ChatrFonts.swift */,
+				05FB97B327A0C64C005377AF /* ChatrColors.swift */,
+				05FB97B527A0C77D005377AF /* Media.xcassets */,
 			);
 			name = Theme;
+			sourceTree = "<group>";
+		};
+		05FB97B027A0C4B4005377AF /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				05FB97B127A0C512005377AF /* AlertBadge.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FB97B627A0C77D005377AF /* Media.xcassets in Resources */,
 				05DCB34B279D005A0078EE3B /* BaseColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,15 +262,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FB97B427A0C64C005377AF /* ChatrColors.swift in Sources */,
 				05DCB34D279D026E0078EE3B /* ChatrListButtonStandard.swift in Sources */,
 				05FB96EB279F7A4D005377AF /* IrregularGradientModifiers.swift in Sources */,
 				05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */,
 				05FB96E7279F79D2005377AF /* Blob.swift in Sources */,
 				05FB96ED279F7B09005377AF /* ChatrTextFieldSingle.swift in Sources */,
 				05D1FF43279CF56B008A038C /* ChatrUI.docc in Sources */,
+				05FB97B227A0C512005377AF /* AlertBadge.swift in Sources */,
 				05FB96F5279FB185005377AF /* ChatrTextFieldList.swift in Sources */,
 				05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */,
 				05FB96F2279FAB7B005377AF /* ChatrFonts.swift in Sources */,
+				05FB97AF27A0C418005377AF /* PinchToZoom.swift in Sources */,
 				05FB96E9279F79F3005377AF /* IrregularGradient.swift in Sources */,
 				05DCB353279D073A0078EE3B /* Constants.swift in Sources */,
 				05DCB355279D1D940078EE3B /* HapticFeedback.swift in Sources */,
