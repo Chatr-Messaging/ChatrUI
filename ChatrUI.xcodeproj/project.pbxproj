@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0565B81D27A4C05300D0B8C8 /* NotificationHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565B81B27A4C05300D0B8C8 /* NotificationHUD.swift */; };
+		0565B81E27A4C05300D0B8C8 /* NotificationViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565B81C27A4C05300D0B8C8 /* NotificationViewExtension.swift */; };
+		0565B82027A4C0CC00D0B8C8 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565B81F27A4C0CC00D0B8C8 /* BlurView.swift */; };
 		05D1FF43279CF56B008A038C /* ChatrUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FF42279CF56B008A038C /* ChatrUI.docc */; };
 		05D1FF44279CF56B008A038C /* ChatrUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D1FF41279CF56B008A038C /* ChatrUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1FF4D279CF895008A038C /* ChatrListSection.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0565B81B27A4C05300D0B8C8 /* NotificationHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHUD.swift; sourceTree = "<group>"; };
+		0565B81C27A4C05300D0B8C8 /* NotificationViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewExtension.swift; sourceTree = "<group>"; };
+		0565B81F27A4C0CC00D0B8C8 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		05D1FF3E279CF56B008A038C /* ChatrUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChatrUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D1FF41279CF56B008A038C /* ChatrUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatrUI.h; sourceTree = "<group>"; };
 		05D1FF42279CF56B008A038C /* ChatrUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ChatrUI.docc; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 				05DCB352279D073A0078EE3B /* Constants.swift */,
 				05DCB354279D1D940078EE3B /* HapticFeedback.swift */,
 				05FB97AE27A0C418005377AF /* PinchToZoom.swift */,
+				0565B81F27A4C0CC00D0B8C8 /* BlurView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -173,6 +180,8 @@
 		05FB97B027A0C4B4005377AF /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				0565B81C27A4C05300D0B8C8 /* NotificationViewExtension.swift */,
+				0565B81B27A4C05300D0B8C8 /* NotificationHUD.swift */,
 				05FB97B127A0C512005377AF /* AlertBadge.swift */,
 			);
 			path = Notifications;
@@ -263,9 +272,12 @@
 				05FB96EB279F7A4D005377AF /* IrregularGradientModifiers.swift in Sources */,
 				05D1FF4E279CF895008A038C /* ChatrListSection.swift in Sources */,
 				05FB96E7279F79D2005377AF /* Blob.swift in Sources */,
+				0565B82027A4C0CC00D0B8C8 /* BlurView.swift in Sources */,
 				05FB96ED279F7B09005377AF /* ChatrTextFieldSingle.swift in Sources */,
 				05D1FF43279CF56B008A038C /* ChatrUI.docc in Sources */,
 				05FB97B227A0C512005377AF /* AlertBadge.swift in Sources */,
+				0565B81E27A4C05300D0B8C8 /* NotificationViewExtension.swift in Sources */,
+				0565B81D27A4C05300D0B8C8 /* NotificationHUD.swift in Sources */,
 				05FB96F5279FB185005377AF /* ChatrTextFieldList.swift in Sources */,
 				05DCB350279D05370078EE3B /* ChatrDefaultInteractiveStyle.swift in Sources */,
 				05FB96F2279FAB7B005377AF /* ChatrFonts.swift in Sources */,
