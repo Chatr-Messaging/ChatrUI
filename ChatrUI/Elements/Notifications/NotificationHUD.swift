@@ -73,12 +73,12 @@ public struct NotificationHUD: View {
                         }
                     }
                 }.padding(10)
-                .padding(.horizontal)
+                .padding(.horizontal, 15)
                 .padding(.trailing, subtitle == "" ? 0 : 10)
                 .overlay(
                     Capsule()
                         .foregroundColor(.clear)
-                        .overlay(Capsule().stroke(Color("blurBorder"), lineWidth: 2))
+                        .overlay(Capsule().stroke(Color("baseBackground").opacity(0.4), lineWidth: 2.5))
                 )
                 .background(
                     BlurView(style: .systemMaterial)

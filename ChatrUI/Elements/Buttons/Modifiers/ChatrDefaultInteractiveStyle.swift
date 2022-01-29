@@ -14,11 +14,3 @@ public struct ChatrDefaultInteractiveStyle: ButtonStyle {
             .background(configuration.isPressed ? Color("baseButton_selected") : Color("baseButton"))
     }
 }
-
-public struct ClickInteractiveStyle: ButtonStyle {
-    public func makeBody(configuration: ChatrDefaultInteractiveStyle.Configuration) -> some View {
-        configuration.label
-            .scaleEffect(configuration.isPressed ? 0.99 : 1.0)
-            .background(configuration.isPressed ? Color("baseButton_selected") : Color("baseButton"))
-    }
-}
