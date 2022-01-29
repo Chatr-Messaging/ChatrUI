@@ -54,7 +54,7 @@ public struct ChatrTextFieldSingle: View {
         self.onEditingChanged = onEditingChanged
     }
 
-    public var body: some View{
+    public var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .center, spacing: 2.5) {
                 if !systemImage.isEmpty {
