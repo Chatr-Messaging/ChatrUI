@@ -21,7 +21,7 @@ public struct EmptyAvatarView: View {
         Circle()
             .frame(width: size, height: size, alignment: .center)
             .foregroundColor(Color("baseBackground"))
-            .shadow(color: Color.black.opacity(0.15), radius: size > 40 ? (size / 8) : size < 25 ? 3 : 5, x: 0, y: size > 40 ? (size / 8) : size < 25 ? 3 : 5)
+            .shadow(color: Color.black.opacity(0.15), radius: size > 40 ? (size / 7) : size < 25 ? 3 : 5, x: 0, y: size > 40 ? (size / 8) : size < 25 ? 3 : 5)
             .overlay(
                 ZStack(alignment: .center) {
                     getGradient(name: fullName)
@@ -38,11 +38,11 @@ public struct EmptyAvatarView: View {
     private func getGradient(name: String) -> LinearGradient {
         let wordValue = name.wordValue
 
-        let divisible = Int(wordValue / ChatrGradients.allGradients.count)
-        let reminders = ChatrGradients.allGradients.count * divisible
+        let divisible = Int(wordValue / ChatrGradients.emptyAvatarGradients.count)
+        let reminders = ChatrGradients.emptyAvatarGradients.count * divisible
         let result = wordValue - reminders
 
-        return ChatrGradients.allGradients[result]
+        return ChatrGradients.emptyAvatarGradients[result]
     }
 
     private func firstLetters(name: String) -> String {

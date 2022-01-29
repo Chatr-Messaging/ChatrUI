@@ -9,7 +9,7 @@ import SwiftUI
 
 public struct ChatrGradients {
 
-    public static let allGradients: [LinearGradient] = [purpleGradient, purpleGradient2, blueGradient, messageBlueGradient, sunriseGradient, orangeYellowGradient, redOrangeGradient, mintTealGradient, indigoPurpleGradient]
+    public static let emptyAvatarGradients: [LinearGradient] = [purpleGradient, blueGradient, sunriseGradient, orangeYellowGradient, redOrangeGradient, mintTealGradient, greenMintGradient, indigoPurpleGradient]
 
     static let purpleGradient = LinearGradient(gradient: Gradient(colors: [Color(red: 224 / 255, green: 155 / 255, blue: 255 / 255, opacity: 0.2), Color(.sRGB, red: 175 / 255, green: 82 / 255, blue: 254 / 255, opacity: 0.4)]), startPoint: .top, endPoint: .bottom)
 
@@ -25,7 +25,9 @@ public struct ChatrGradients {
 
     static let redOrangeGradient = LinearGradient(gradient: Gradient(colors: [Color.orange.opacity(0.15), Color.red.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
 
-    static let mintTealGradient = LinearGradient(gradient: Gradient(colors: [Color.teal.opacity(0.3), Color.mint.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+    static let mintTealGradient = LinearGradient(gradient: Gradient(colors: [Color.mint.opacity(0.3), Color.teal.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+
+    static let greenMintGradient = LinearGradient(gradient: Gradient(colors: [Color.mint.opacity(0.3), Color.green.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
 
     static let indigoPurpleGradient = LinearGradient(gradient: Gradient(colors: [Color.indigo.opacity(0.3), Color.purple.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
 
