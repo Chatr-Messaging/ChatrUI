@@ -61,7 +61,7 @@ public struct ChatrTextFieldSingle: View {
                     Image(systemName: systemImage)
                         .resizable()
                         .scaledToFit()
-                        .foregroundColor(focusedField ? .primary : .secondary)
+                        .foregroundColor(focusedField || hasText ? .primary : .secondary)
                         .frame(width: 20, height: 20, alignment: .center)
                         .padding(.trailing, 5)
                         .offset(y: hasText ? 5 : 0)
@@ -119,11 +119,10 @@ public struct ChatrTextFieldSingle: View {
             .padding(.horizontal)
         }
         .padding(.vertical, 15)
-        .background(Color("baseButton"))
         .cornerRadius(10)
         .overlay(RoundedRectangle(cornerRadius: 10, style: .circular)
-                    .stroke(exceededLimit ? .red.opacity(0.6) : (focusedField ? .blue.opacity(0.6) : .primary.opacity(0.2)), lineWidth: 2)
-                    .shadow(color: focusedField ? .blue.opacity(0.2) : .clear, radius: 6, x: 0, y: 2))
+                    .stroke(exceededLimit ? .red.opacity(0.6) : .secondary, lineWidth: 1.25)
+                    .shadow(color: focusedField ? .black.opacity(0.1) : .clear, radius: 5, x: 0, y: 1))
         .padding(.horizontal)
         .onAppear() {
             if !text.isEmpty {

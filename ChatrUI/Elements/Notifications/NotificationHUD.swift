@@ -51,14 +51,14 @@ public struct NotificationHUD: View {
                     Image(systemName: image)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 28, height: 28, alignment: .center)
+                        .frame(width: 26, height: 26, alignment: .center)
                         .foregroundColor(color)
                         .font(Font.title.weight(.regular))
                     
                     VStack(alignment: .leading, spacing: 0) {
                         Text(title)
                             .font(.none)
-                            .fontWeight(subtitle == "" ? .medium : .semibold)
+                            .fontWeight(.medium)
                             .foregroundColor(.primary)
                             .multilineTextAlignment(.leading)
                             .lineLimit(2)
@@ -73,7 +73,7 @@ public struct NotificationHUD: View {
                         }
                     }
                 }.padding(10)
-                .padding(.horizontal, 15)
+                .padding(.horizontal, 10)
                 .padding(.trailing, subtitle == "" ? 0 : 10)
                 .overlay(
                     Capsule()
